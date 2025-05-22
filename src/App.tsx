@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Hero from "./components/Hero";
 import TypewriterFill from "./components/TypewriterFill";
 
-const LANDING_DURATION = 2500;
+const LANDING_DURATION = 3500;
 
 export default function App() {
   const [showHero, setShowHero] = useState(false);
