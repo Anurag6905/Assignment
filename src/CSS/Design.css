@@ -1,9 +1,9 @@
 .twf-container {
     position: relative;
     display: inline-block;
-  }
+}
   
-  .twf-outlined {
+.twf-outlined {
     font-size: 4rem;
     color: transparent;
     -webkit-text-stroke: 2px #fff;
@@ -13,9 +13,9 @@
     position: relative;
     pointer-events: none;
     user-select: none;
-  }
+}
   
-  .twf-filled {
+.twf-filled {
     font-size: 4rem;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
@@ -29,5 +29,5 @@
     user-select: none;
     /* Start hidden, animate in with clip-path */
     clip-path: inset(100% 0% 0% 0%);
-  }
+}
   
