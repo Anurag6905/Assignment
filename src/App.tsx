@@ -35,7 +35,7 @@ export default function App() {
             zIndex: 9999,
           }}
         >
-          <TypewriterFill text="MANTHAN LAWDE" />
+          <TypewriterFill text="ITZFIZZ DIGITAL" />
         </motion.div>
       )}
       {showHero && (
