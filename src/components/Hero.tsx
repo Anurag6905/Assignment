@@ -20,10 +20,10 @@ const cornerImages: CornerImage[] = [
 ];
 
 const FLOATS = [
-  { ampX: 60, ampY: 46, speedX: 0.7, speedY: 1.1, phase: 0 },
-  { ampX: 50, ampY: 48, speedX: 0.5, speedY: 0.8, phase: Math.PI / 2 },
-  { ampX: 79, ampY: 52, speedX: 0.9, speedY: 0.6, phase: Math.PI },
-  { ampX: 55, ampY: 75, speedX: 0.6, speedY: 0.9, phase: Math.PI / 3 },
+  { ampX: 40, ampY: 46, speedX: 0.7, speedY: 1.1, phase: 0 },
+  { ampX: 42, ampY: 48, speedX: 0.5, speedY: 0.8, phase: Math.PI / 2 },
+  { ampX: 49, ampY: 42, speedX: 0.9, speedY: 0.6, phase: Math.PI },
+  { ampX: 45, ampY: 45, speedX: 0.6, speedY: 0.9, phase: Math.PI / 3 },
 ];
 
 function cornerPosition(key: CornerKey) {
