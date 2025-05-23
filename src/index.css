@@ -1,12 +1,17 @@
 @import 'tailwindcss';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap');
 
-html{
+html , body{
     width: 100%;
-    height: auto;
-}
-body{
-    font-family: 'Montserrat';
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
     background-color: #212121;
 }
+
+body {
+    font-family: 'Satoshi';
+}
+
 
