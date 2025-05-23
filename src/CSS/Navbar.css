@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Satoshi&display=swap');
+
+body , html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    font-family: 'Satoshi';
+}
+
+.Navbar-container {
+    width: 100vw;
+    height: auto;
+    padding: 1rem;
+    margin-bottom: 5rem;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Navbar-Company {
+    width: 40%;
+    height: auto;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.Title {
+    font-size: 1.2rem;
+    font-weight: 1000;
+    color: aliceblue;
+    letter-spacing: 2px;
+}
+
+.Navbar-anchors {
+    width: 60%;
+    height: auto;
+    padding: 0.5rem;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Links {
+    font-size: 1rem;
+    color: aliceblue;
+}

@@ -13,17 +13,17 @@ interface CornerImage {
 }
 
 const cornerImages: CornerImage[] = [
-  { src: '/P1.jpg', className: 'top-left', key: 'top-left', width: 250, height: 180 },
-  { src: '/P2.jpg', className: 'top-right', key: 'top-right', width: 250, height: 180 },
-  { src: '/P17.jpg', className: 'bottom-left', key: 'bottom-left', width: 250, height: 180 },
-  { src: '/P46.jpg', className: 'bottom-right', key: 'bottom-right', width: 250, height: 180 },
+  { src: '/P1.jpg', className: 'top-left', key: 'top-left', width: 300, height: 200 },
+  { src: '/P2.jpg', className: 'top-right', key: 'top-right', width: 300, height: 200 },
+  { src: '/P17.jpg', className: 'bottom-left', key: 'bottom-left', width: 300, height: 200 },
+  { src: '/P46.jpg', className: 'bottom-right', key: 'bottom-right', width: 300, height: 200 },
 ];
 
 const FLOATS = [
-  { ampX: 20, ampY: 26, speedX: 0.7, speedY: 1.1, phase: 0 },
-  { ampX: 30, ampY: 28, speedX: 0.5, speedY: 0.8, phase: Math.PI / 2 },
-  { ampX: 29, ampY: 22, speedX: 0.9, speedY: 0.6, phase: Math.PI },
-  { ampX: 25, ampY: 25, speedX: 0.6, speedY: 0.9, phase: Math.PI / 3 },
+  { ampX: 60, ampY: 46, speedX: 0.7, speedY: 1.1, phase: 0 },
+  { ampX: 50, ampY: 48, speedX: 0.5, speedY: 0.8, phase: Math.PI / 2 },
+  { ampX: 79, ampY: 52, speedX: 0.9, speedY: 0.6, phase: Math.PI },
+  { ampX: 55, ampY: 75, speedX: 0.6, speedY: 0.9, phase: Math.PI / 3 },
 ];
 
 function cornerPosition(key: CornerKey) {
@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
       const rect = img.getBoundingClientRect();
       const x = e.clientX - rect.left - rect.width / 2;
       const y = e.clientY - rect.top - rect.height / 2;
-      const maxShift = 30;
+      const maxShift = 200;
       setMouseOffset({
         x: Math.max(-maxShift, Math.min(maxShift, x)),
         y: Math.max(-maxShift, Math.min(maxShift, y)),

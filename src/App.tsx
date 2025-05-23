@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Hero from "./components/Hero";
 import TypewriterFill from "./components/TypewriterFill";
+import Navbar from "./components/Navbar";
 
 const LANDING_DURATION = 3500;
 
@@ -14,6 +15,7 @@ export default function App() {
   }, []);
 
   return (
+  <>
     <AnimatePresence mode="wait">
       {!showHero && (
         <motion.div
@@ -39,21 +41,38 @@ export default function App() {
         </motion.div>
       )}
       {showHero && (
-        <motion.div
-          key="hero"
-          initial={{ opacity: 0, y: -80 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.7 }}
-          style={{
-            minHeight: "100vh",
-            width: "100vw",
-            background: "#181818",
-          }}
-        >
-          <Hero />
-        </motion.div>
+        <>
+          <motion.div 
+            key="navbar"
+            initial={{ opacity: 0, y: 80}}
+            animate={{opacity: 1, y: 0}}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.7 }}
+            style={{
+              height: "auto",
+              width: "100vw",
+              background: "#181818",
+            }}
+            >
+              <Navbar />
+          </motion.div>
+          <motion.div
+            key="hero"
+            initial={{ opacity: 0, y: -80 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.7 }}
+            style={{
+              minHeight: "100vh",
+              width: "100vw",
+              background: "#181818",
+            }}
+          >
+            <Hero />
+          </motion.div>
+        </>
       )}
     </AnimatePresence>
+  </>
   );
 }
